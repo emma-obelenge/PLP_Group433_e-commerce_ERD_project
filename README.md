@@ -104,6 +104,12 @@ We have strived to create a well-structured and logically sound database design 
 - **Email**: [evanwayodi19@gmail.com](mailto:evanwayodi19@gmail.com)
 - **GitHub**: [Evan19-CoDe](https://github.com/Evan19-CoDe)
 
+#### Stephen Muhoho
+
+- **Role**: ERD Review & Design
+- **Email**: [muhoho.skariuki@gmail.com](mailto:muhoho.skariuki@gmail.com)
+- **GitHub**: [RiuK-47](https://github.com/RiuK-47)
+
 
 ## 🗓️ Project Timeline
 
