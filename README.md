@@ -17,7 +17,13 @@ This repository includes the following:
 
 The ERD visually represents the entities (tables) in our e-commerce database and the relationships between them. It clearly defines the attributes of each entity, primary keys, foreign keys, and constraints.
 
-* **To view the ERD, please refer to the file located in the `e-commerce_ERD_link` file.**
+## Screenshots
+
+<div style="display: flex; flex-direction: column; gap: 10px;">
+
+<img src="https://github.com/emma-obelenge/-PLP_Group433_e-commerce_ERD_project/blob/7ee834d3acba4d72fc591a6e6abe3f3b97b25094/e-commerce_ER_Diagram_(Group_433).png" alt="Main Menu" width="400" height="500">
+
+* **To view the ERD on drive, please refer to the file located in the `e-commerce_ERD_link` file.**
 
 ### 🔄 Data Flow
 
