@@ -21,7 +21,7 @@ The ERD visually represents the entities (tables) in our e-commerce database and
 
 <div style="display: flex; flex-direction: column; gap: 10px;">
 
-<img src="[https://github.com/emma-obelenge/OOP-Challenge_Group-433/blob/master/screenshots%2Fmain_menu.png](https://github.com/emma-obelenge/PLP_Group433_e-commerce_ERD_project/blob/a5fabf19952bc21db3dd6f1604e18beea30e6a6f/e-commerce_ER_Diagram_(Group_433).png)" alt="Main Menu" width="400" height="500">
+<img src="https://github.com/emma-obelenge/PLP_Group433_e-commerce_ERD_project/blob/a5fabf19952bc21db3dd6f1604e18beea30e6a6f/e-commerce_ER_Diagram_(Group_433).png" alt="Main Menu" width="400" height="500">
 
 </div>
 
