@@ -118,7 +118,13 @@ We have strived to create a well-structured and logically sound database design 
 - **Email**: [muhoho.skariuki@gmail.com](mailto:muhoho.skariuki@gmail.com)
 - **GitHub**: [RiuK-47](https://github.com/RiuK-47)
 
+#### Rodgers Maragia
 
+- **Role**: ERD Review & Design
+- **Email**: [r28081999m@gmail.com](mailto:r28081999m@gmail.com)
+- **GitHub**: [Rockjunior](https://github.com/Rockjunior)
+
+  
 ## 🗓️ Project Timeline
 
 * [Start Date]: Project Initiation and Requirements Analysis
