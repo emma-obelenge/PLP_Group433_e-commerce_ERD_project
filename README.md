@@ -8,7 +8,7 @@ This repository contains the deliverables for the Peer Group Assignment focused 
 
 This repository includes the following:
 
-* **`e-commerce_ERD_link`**: This file contains link to the final Entity-Relationship Diagram in a visual format (google drive/draw.io).
+* **`e-commerce_ERD_link`**: This file contains a link to the final Entity-Relationship Diagram in a visual format (Google drive/draw.io).
 * **`README.md`**: The current file, providing an overview of the project and instructions for review.
 
 ## 🏗️ Database Design
@@ -22,6 +22,7 @@ The ERD visually represents the entities (tables) in our e-commerce database and
 <div style="display: flex; flex-direction: column; gap: 10px;">
 
 <img src="https://github.com/emma-obelenge/-PLP_Group433_e-commerce_ERD_project/blob/7ee834d3acba4d72fc591a6e6abe3f3b97b25094/e-commerce_ER_Diagram_(Group_433).png" alt="Main Menu" width="400" height="500">
+</div>
 
 * **To view the ERD on drive, please refer to the file located in the `e-commerce_ERD_link` file.**
 
