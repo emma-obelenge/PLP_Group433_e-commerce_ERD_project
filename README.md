@@ -20,13 +20,6 @@ The ERD visually represents the entities (tables) in our e-commerce database and
 ## THE ENTITY RELATIONSHIP DIAGRAM 
 ![image](https://github.com/user-attachments/assets/0cc8d856-92de-4b03-a4b6-2a83bd347b9e)
 
-
-## Screenshots
-
-<div style="display: flex; flex-direction: column; gap: 10px;">
-
-<img src="https://github.com/emma-obelenge/PLP_Group433_e-commerce_ERD_project/blob/40c20ba8e3dda7cdae41d323bbf67ca080681a4a/e-commerce_ER_Diagram_(Group_433).png" alt="Main Menu" width="400" height="500">
-
 - **To view the ERD on drive, please refer to the file located in the `e-commerce_ERD_link` file.**
 
 ### 🔄 Data Flow
@@ -112,13 +105,13 @@ We have strived to create a well-structured and logically sound database design 
 
 - **Role**: ERD Review & Design
 - **Email**: [evanwayodi19@gmail.com](mailto:evanwayodi19@gmail.com)
-- **GitHub**: [Evan19-CoDe](https://github.com/Evan19-CoDe)
+- **GitHub**: [@Evan19-CoDe](https://github.com/Evan19-CoDe)
 
 #### Stephen Muhoho
 
 - **Role**: ERD Review & Design
 - **Email**: [muhoho.skariuki@gmail.com](mailto:muhoho.skariuki@gmail.com)
-- **GitHub**: [RiuK-47](https://github.com/RiuK-47)
+- **GitHub**: [@RiuK-47](https://github.com/RiuK-47)
 
 ## 🗓️ Project Timeline
 
