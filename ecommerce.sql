@@ -126,113 +126,169 @@ CREATE TABLE product_attribute (
 );
 
 -- Insert sample African food brands
-INSERT INTO brand (brand_name, description) VALUES 
-('Nkulenu', 'Ghanaian traditional food products since 1950'),
-('Dangote Foods', 'Pan-African food manufacturing company'),
-('Okomu Oil', 'Nigerian palm oil and food products'),
-('Blue Skies', 'West African fresh and processed foods'),
-('Ceres', 'South African fruit juices and products');
-
--- Insert sample African food categories
-INSERT INTO product_category (category_name, parent_category_id, description) VALUES 
-('Staples', NULL, 'Basic African food staples'),
-('Grains', 1, 'African grains and cereals'),
-('Tubers', 1, 'Root crops and tubers'),
-('Spices', NULL, 'African herbs and spices'),
-('Oils', NULL, 'Traditional African cooking oils'),
-('Processed Foods', NULL, 'Ready-to-eat African foods');
-
--- Insert sample size categories for African foods
-INSERT INTO size_category (category_name, description) VALUES 
-('Weight', 'Product weight measurements'),
-('Volume', 'Liquid volume measurements'),
-('Count', 'Piece count for packaged items');
-
--- Insert sample sizes for African foods
-INSERT INTO size_option (size_category_id, size_value, description) VALUES 
-(1, '500g', 'Half kilogram package'),
-(1, '1kg', 'One kilogram package'),
-(1, '5kg', 'Five kilogram bag'),
-(2, '250ml', 'Quarter liter bottle'),
-(2, '500ml', 'Half liter bottle'),
-(2, '1L', 'One liter bottle'),
-(3, '12 pieces', 'Dozen package'),
-(3, '24 pieces', 'Two dozen package');
-
--- Insert sample colors for packaging
-INSERT INTO color (color_name, hex_code) VALUES 
-('Gold', '#FFD700'),
-('Green', '#008000'),
+INSERT INTO brand (brand_name, description) VALUES
+('Tropical Taste', 'Authentic African food brand'),
+('Samsung', 'Global electronics manufacturer'),
+('Nike', 'Popular athletic clothing brand'),
+('Mama’s Pride', 'Homegrown African spice and grain brand'),
+('Sony', 'Electronics and entertainment'),
+('Adidas', 'Sportswear and accessories'),
+('Zara', 'Fast fashion clothing brand'),
+('LG', 'Home electronics and appliances'),
+('Organic Village', 'African organic food producers'),
+('Apple', 'Consumer electronics and software');
+-- Sample data for product categories
+INSERT INTO product_category (category_name, parent_category_id, description) VALUES
+('Food', NULL, 'All food items'),
+('Electronics', NULL, 'Electronic items and gadgets'),
+('Clothing', NULL, 'Clothing and apparel'),
+('Spices', 1, 'African spices and condiments'),
+('Grains', 1, 'Staple African grains'),
+('Smartphones', 2, 'Mobile phones and accessories'),
+('TV & Audio', 2, 'Televisions and audio systems'),
+('Men Clothing', 3, 'Menswear'),
+('Women Clothing', 3, 'Womenswear'),
+('Children Clothing', 3, 'Clothing for children');
+--  Sample data for product categories
+INSERT INTO product (product_name, description, brand_id, category_id, base_price) VALUES
+('Jollof Rice Mix', 'Ready-to-cook Nigerian Jollof rice seasoning', 1, 4, 4.99),
+('Samsung Galaxy S21', 'Smartphone with 128GB storage', 2, 6, 799.99),
+('Nike Air Max 270', 'Comfortable and stylish sneakers', 3, 8, 149.99),
+('Fonio Grain', 'Ancient West African grain, 1kg', 4, 5, 6.49),
+('Sony Bravia 55"', '4K Ultra HD Smart LED TV', 5, 7, 699.00),
+('Adidas Joggers', 'Men’s sports jogger pants', 6, 8, 59.99),
+('Zara Floral Dress', 'Light and flowy summer dress', 7, 9, 39.99),
+('LG Bluetooth Speaker', 'Portable audio speaker', 8, 7, 89.50),
+('Organic Peanut Butter', 'No preservatives, 500g', 9, 4, 5.29),
+('iPhone 13', 'Apple smartphone 128GB', 10, 6, 899.99);
+-- Sample data for product images
+INSERT INTO product_image (product_id, image_url, is_primary) VALUES
+(1, 'images/jollof_mix.jpeg', TRUE),
+(2, 'images/galaxy_s21.jpg', TRUE),
+(3, 'images/air_max_270.jpg', TRUE),
+(4, 'images/fufu-powder.jpg', TRUE),
+(5, 'images/sony_bravia.jpg', TRUE),
+(6, 'images/adidas_joggers.jpg', TRUE),
+(7, 'images/zara_dress.jpg', TRUE),
+(8, 'images/lg_speaker.jpg', TRUE),
+(9, 'images/palm-oil.jpg', TRUE),
+(10, 'images/iphone_13.jpg', TRUE);
+-- Sample data for colors
+INSERT INTO color (color_name, hex_code) VALUES
 ('Red', '#FF0000'),
 ('Black', '#000000'),
+('White', '#FFFFFF'),
+('Blue', '#0000FF'),
+('Green', '#008000'),
+('Yellow', '#FFFF00'),
+('Grey', '#808080'),
+('Orange', '#FFA500'),
+('Pink', '#FFC0CB'),
 ('Brown', '#A52A2A');
+--  Sample data for size categories
+INSERT INTO size_category (category_name, description) VALUES
+('Food Packaging', 'Size for food product packaging'),
+('Clothing Size', 'Size for clothing items'),
+('Electronics', 'Storage/Screen size options for electronics'),
+('Shoes Size', 'Footwear sizing'),
+('Bottle Volume', 'Liquid capacity in bottles'),
+('Dress Size', 'Dress-specific sizing'),
+('Grain Pack Size', 'Grains packaging sizes'),
+('Phone Storage', 'Smartphone storage sizes'),
+('TV Screen Size', 'Size of TV screens in inches'),
+('Speaker Size', 'Portable speaker watt size');
+-- Sample data for size options
+INSERT INTO size_option (size_category_id, size_value, description) VALUES
+(1, '500g', 'Small food packet'),
+(1, '1kg', 'Medium food packet'),
+(2, 'M', 'Medium clothing size'),
+(2, 'L', 'Large clothing size'),
+(3, '128GB', 'Storage size for smartphone'),
+(4, '42', 'Shoe size EU'),
+(5, '750ml', 'Standard bottle'),
+(6, 'S', 'Small dress size'),
+(7, '2kg', 'Large grain pack'),
+(9, '55"', 'Medium TV size');
+-- Sample data for attribute categories
+INSERT INTO attribute_category (category_name, description) VALUES
+('Nutritional Info', 'Nutritional details of food'),
+('Storage', 'Storage capacity'),
+('Material', 'Material type'),
+('Connectivity', 'Type of connectivity'),
+('Fabric Type', 'Type of fabric'),
+('Battery Life', 'Device battery duration'),
+('Display Type', 'TV or phone display'),
+('Organic', 'Organic vs processed'),
+('Spice Level', 'Heat/spice content'),
+('Weight', 'Item weight');
+-- Sample data for attribute types
+INSERT INTO attribute_type (type_name, description) VALUES
+('Text', 'Simple text'),
+('Number', 'Numeric value'),
+('Boolean', 'True/False value'),
+('Dropdown', 'Predefined options'),
+('Color', 'Color related value'),
+('Percentage', 'Ratio or percentage'),
+('Decimal', 'Decimal numbers'),
+('Range', 'Min-Max values'),
+('URL', 'Web link'),
+('Multi-select', 'Multiple choice attributes');
+-- Sample data for product variations
+INSERT INTO product_variation (product_id, variation_name) VALUES
+(1, 'Hot Jollof Mix'),
+(1, 'Mild Jollof Mix'),
+(2, 'Phantom Black'),
+(2, 'Silver'),
+(3, 'Black/White'),
+(3, 'Red'),
+(7, 'Blue Floral'),
+(7, 'Green Floral'),
+(10, 'Midnight'),
+(10, 'Starlight');
+-- Sample data for product items
+INSERT INTO product_item (product_id, variation_id, size_id, color_id, sku, quantity_in_stock, price) VALUES
+(1, 1, 1, 2, 'JLF-HOT-500G-BLK', 30, 4.99),
+(1, 2, 2, 3, 'JLF-MLD-1KG-WHT', 25, 5.49),
+(2, 3, 5, 1, 'SGS21-BLK-128', 15, 799.99),
+(2, 4, 5, 3, 'SGS21-SLV-128', 10, 799.99),
+(3, 5, 4, 2, 'NA270-BLK-42', 20, 149.99),
+(3, 6, 4, 1, 'NA270-RED-42', 18, 149.99),
+(7, 7, 8, 4, 'ZRD-BLU-S', 22, 39.99),
+(7, 8, 8, 5, 'ZRD-GRN-S', 19, 39.99),
+(10, 9, 5, 2, 'IP13-MID-128', 12, 899.99),
+(10, 10, 5, 3, 'IP13-STR-128', 8, 899.99);
+-- Sample data for product attributes
+INSERT INTO product_attribute (product_id, attribute_category_id, attribute_type_id, attribute_name, attribute_value) VALUES
+(1, 1, 1, 'Calories', '120 per serving'),
+(1, 9, 4, 'Spice Level', 'Hot'),
+(2, 2, 1, 'Storage', '128GB'),
+(2, 4, 1, 'Connectivity', '5G, Wi-Fi 6'),
+(3, 3, 1, 'Material', 'Textile & Rubber'),
+(7, 5, 1, 'Fabric Type', 'Cotton'),
+(9, 8, 3, 'Organic', 'True'),
+(5, 7, 1, 'Display Type', 'OLED'),
+(5, 6, 1, 'Battery Life', '10 hours'),
+(10, 2, 1, 'Storage', '128GB');
 
--- Insert attribute types
-INSERT INTO attribute_type (type_name, description) VALUES 
-('text', 'Textual attribute'),
-('number', 'Numeric attribute'),
-('boolean', 'True/False attribute'),
-('date', 'Date attribute');
+-- Top 5 Most Stocked Products
+SELECT p.product_name, SUM(pi.quantity_in_stock) AS total_stock
+FROM product p
+JOIN product_item pi ON p.product_id = pi.product_id
+GROUP BY p.product_name
+ORDER BY total_stock DESC
+LIMIT 5;
 
--- Insert attribute categories for African foods
-INSERT INTO attribute_category (category_name, description) VALUES 
-('Nutrition', 'Nutritional information'),
-('Origin', 'Product origin details'),
-('Preparation', 'Preparation instructions'),
-('Storage', 'Storage requirements');
+-- Product Variants with Low Stock (< 10 units)
+SELECT p.product_name, pv.variation_name, pi.sku, pi.quantity_in_stock
+FROM product_item pi
+JOIN product p ON pi.product_id = p.product_id
+JOIN product_variation pv ON pi.variation_id = pv.variation_id
+WHERE pi.quantity_in_stock < 10
+ORDER BY pi.quantity_in_stock ASC;
 
--- Insert sample African food products
-INSERT INTO product (product_name, description, brand_id, category_id, base_price) VALUES 
-('Fufu Powder', 'Instant fufu flour from cassava and plantain', 1, 2, 8.99),
-('Palm Oil', 'Pure red palm oil for cooking', 3, 5, 6.50),
-('Jollof Rice Mix', 'Premium jollof rice seasoning mix', 2, 6, 4.75),
-('Suya Spice', 'Authentic Nigerian suya spice blend', 4, 4, 5.25),
-('Plantain Chips', 'Crispy ripe plantain chips', 5, 6, 3.99),
-('Egusi Seeds', 'High quality melon seeds for soups', 1, 2, 7.50);
-
--- Insert product variations
-INSERT INTO product_variation (product_id, variation_name) VALUES 
-(1, 'Original'),
-(1, 'Plantain Blend'),
-(2, 'Traditional'),
-(2, 'Refined'),
-(3, 'Mild'),
-(3, 'Spicy'),
-(4, 'Regular'),
-(4, 'Extra Hot'),
-(5, 'Sweet'),
-(5, 'Spicy');
-
--- Insert product items with African food variations
-INSERT INTO product_item (product_id, variation_id, size_id, color_id, sku, quantity_in_stock, price) VALUES 
-(1, 1, 1, 2, 'FUFU500G', 100, 8.99),
-(1, 1, 2, 2, 'FUFU1KG', 75, 15.99),
-(1, 2, 1, 3, 'FUFUP500G', 60, 9.50),
-(2, 3, 4, 3, 'PALM250ML', 120, 3.25),
-(2, 3, 5, 3, 'PALM500ML', 90, 6.50),
-(3, 5, 1, 1, 'JOLLOF500G', 80, 4.75),
-(4, 7, 1, 4, 'SUYA500G', 65, 5.25),
-(5, 9, 7, 5, 'CHIPS12', 110, 3.99),
-(6, NULL, 2, 2, 'EGUSI1KG', 45, 7.50);
-
--- Insert product images for African foods
-INSERT INTO product_image (product_id, image_url, is_primary) VALUES 
-(1, 'Images/fufu-powder.jpg', TRUE),
-(1, 'Images/fufu-flour.jpg', FALSE),
-(2, 'Images/palm-oil.jpg', TRUE),
-(3, 'Images/jollof-mix.jpeg', TRUE),
-(4, 'Images/suya-spice.jpg', TRUE),
-(5, 'Images/plantain-chips.jpg', TRUE),
-(6, 'Images/egusi-seeds.jpg', TRUE);
-
--- Insert product attributes for African foods
-INSERT INTO product_attribute (product_id, attribute_category_id, attribute_type_id, attribute_name, attribute_value) VALUES 
-(1, 1, 2, 'Calories', '350 per 100g'),
-(1, 4, 1, 'Storage', 'Keep in cool dry place'),
-(2, 2, 1, 'Origin', 'Produced in Nigeria'),
-(2, 3, 1, 'Usage', 'For cooking soups and stews'),
-(3, 3, 1, 'Preparation', 'Add to rice with tomatoes and onions'),
-(4, 2, 1, 'Region', 'Northern Nigeria blend'),
-(5, 1, 2, 'Serving Size', 'About 15 chips'),
-(6, 3, 1, 'Preparation', 'Grind before use in soups');
-
+-- Average Price of Products by Category
+SELECT pc.category_name, ROUND(AVG(p.base_price), 2) AS avg_price
+FROM product p
+JOIN product_category pc ON p.category_id = pc.category_id
+GROUP BY pc.category_name
+ORDER BY avg_price DESC;
