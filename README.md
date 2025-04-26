@@ -17,6 +17,10 @@ This repository includes the following:
 
 The ERD visually represents the entities (tables) in our e-commerce database and the relationships between them. It clearly defines the attributes of each entity, primary keys, foreign keys, and constraints.
 
+THE ERD DIAGRAM 
+![image](https://github.com/user-attachments/assets/0cc8d856-92de-4b03-a4b6-2a83bd347b9e)
+
+
 ## Screenshots
 
 <div style="display: flex; flex-direction: column; gap: 10px;">
